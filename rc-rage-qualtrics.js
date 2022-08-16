@@ -1,4 +1,5 @@
 Qualtrics.SurveyEngine.addOnload(function () {
+    console.log('RUNNING CHECKED IN CONFIG FILE')
 
     /*Place your JavaScript here to run when the page loads*/
 
@@ -18,7 +19,9 @@ Qualtrics.SurveyEngine.addOnload(function () {
 
     /* Change 2: Defining and loading required resources */
     // `requiredResources` must include all the required JS files
-    var task_github = "https://kywch.github.io/RC-RAGE_jsPsych/"; // https://<your-github-username>.github.io/<your-experiment-name>
+
+    // CHANGE THIS BACK WHEN DEPLOYING PROD
+    var task_github = "https://michaelmeidenbauer.github.io/RC-RAGE_jsPsych_testing/"; // https://<your-github-username>.github.io/<your-experiment-name>
     var requiredResources = [
         task_github + "lib/jspsych-6.1.0/jspsych.js",
         task_github + "lib/jspsych-6.1.0/plugins/jspsych-fullscreen.js",
